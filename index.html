@@ -526,7 +526,7 @@
                 <div class="beta-badge">Programme Beta</div>
                 <h1>Achetez votre bien immobilier<br>en toute sérénité</h1>
                 <p class="subtitle">L'achat immobilier est l'une des décisions les plus importantes d'une vie. Nous analysons votre bien pour vous éviter les pièges cachés et vous aider à négocier au bon prix.</p>
-                <p class="cta-text">20 places beta · Analyse complète gratuite</p>
+                <p class="cta-text">Places limitées · Analyse complète gratuite</p>
             </section>
 
             <!-- Stats -->
@@ -597,7 +597,6 @@
                 <div class="criteria-list">
                     <div class="criteria-item">Vous achetez pour y habiter vous-même ou mettre en location</div>
                     <div class="criteria-item">Vous êtes en phase active (visites régulières ou offre imminente)</div>
-                    <div class="criteria-item">Vous êtes prêt à partager un témoignage honnête</div>
                 </div>
             </div>
 
@@ -606,6 +605,7 @@
                 <h2>Candidature Beta Program</h2>
                 <p class="form-intro">Toutes les candidatures seront examinées. Vous recevrez une réponse sous 48h.</p>
                 
+                <div id="form-error" style="color:#dc2626;font-size:14px;margin-bottom:16px;"></div>
                 <form id="betaForm">
                     <!-- Personal Info -->
                     <div class="form-row">
@@ -624,16 +624,9 @@
                         <input type="email" id="email" name="email" required>
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="telephone">Téléphone <span class="optional">(optionnel)</span></label>
-                            <input type="tel" id="telephone" name="telephone">
-                        </div>
-                        <div class="form-group">
-                            <label for="linkedin">Profil LinkedIn <span class="optional">(optionnel)</span></label>
-                            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/...">
-                            <div class="form-hint">Fortement encouragé pour augmenter vos chances</div>
-                        </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone <span class="optional">(optionnel)</span></label>
+                        <input type="tel" id="telephone" name="telephone">
                     </div>
 
                     <!-- Project Info -->
@@ -676,25 +669,6 @@
                         <label for="motivation">Pourquoi voulez-vous participer au beta program ? <span class="required">*</span></label>
                         <textarea id="motivation" name="motivation" required placeholder="Ex: Je suis en train de visiter des appartements à Paris et j'ai peur de surpayer. J'aimerais avoir un avis objectif sur les prix..."></textarea>
                         <div class="form-hint">Soyez honnête et spécifique, cela nous aide à sélectionner les meilleurs profils</div>
-                    </div>
-
-                    <!-- Engagements -->
-                    <div class="form-group">
-                        <label>Vos engagements en tant que beta tester <span class="required">*</span></label>
-                        <div class="checkbox-group">
-                            <div class="checkbox-option">
-                                <input type="checkbox" id="engagement_temoignage" name="engagement_temoignage" required>
-                                <label for="engagement_temoignage">J'accepte de donner un témoignage écrit honnête après le service</label>
-                            </div>
-                            <div class="checkbox-option">
-                                <input type="checkbox" id="engagement_avis" name="engagement_avis" required>
-                                <label for="engagement_avis">J'accepte de laisser un avis Google après le service</label>
-                            </div>
-                            <div class="checkbox-option">
-                                <input type="checkbox" id="engagement_video" name="engagement_video">
-                                <label for="engagement_video">Je suis prêt à faire une vidéo témoignage (optionnel, mais un gros plus !)</label>
-                            </div>
-                        </div>
                     </div>
 
                     <!-- Pain Points -->
@@ -743,16 +717,16 @@
                     <p style="margin-bottom: 24px;">Idéalement : PV d'assemblées générales de copropriété (3 dernières années), diagnostics techniques (DPE, électricité, amiante, plomb), et état des risques. Si vous ne les avez pas encore, pas de problème — nous vous dirons précisément lesquels demander à l'agent immobilier ou au notaire.</p>
 
                     <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--color-text-primary);">Comment serai-je sélectionné ?</h3>
-                    <p style="margin-bottom: 24px;">Nous recherchons des profils en phase active d'achat (visites régulières ou offre imminente), motivés pour partager leur retour honnête. Avoir un profil LinkedIn public augmente vos chances.</p>
+                    <p style="margin-bottom: 24px;">Nous recherchons des profils en phase active d'achat (visites régulières ou offre imminente). Plus votre situation est concrète et votre motivation précise, plus vous avez de chances d'être sélectionné.</p>
 
                     <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--color-text-primary);">C'est vraiment 100% gratuit ?</h3>
-                    <p style="margin-bottom: 24px;">Oui, totalement. L'analyse complète (prix marché + documents copropriété + diagnostics + négociation) vous est offerte. En échange, nous vous demandons un témoignage honnête et un avis Google.</p>
+                    <p style="margin-bottom: 24px;">Oui, totalement. L'analyse complète (prix marché + documents copropriété + diagnostics + négociation) vous est offerte. Nous sommes en phase beta et cherchons à valider notre service sur des cas réels.</p>
 
                     <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--color-text-primary);">Combien de temps ça prend ?</h3>
                     <p style="margin-bottom: 24px;">Vous recevrez votre analyse complète sous 48h par email. L'appel découverte dure 30 min (fortement recommandé pour personnaliser les conseils et répondre à vos questions).</p>
 
                     <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--color-text-primary);">Que se passe-t-il après le beta ?</h3>
-                    <p style="margin-bottom: 24px;">Navly sera lancé officiellement cet été. Les beta testers bénéficieront d'une analyse gratuite de leur prochain bien.</p>
+                    <p style="margin-bottom: 24px;">Navly sera lancé prochainement. Les beta testers auront un accès prioritaire.</p>
 
                     <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--color-text-primary);">Mes données sont-elles protégées ?</h3>
                     <p>Vos informations personnelles et documents sont strictement confidentiels et ne seront jamais partagés. Ils servent uniquement à vous fournir l'analyse et à améliorer le service.</p>
@@ -767,91 +741,6 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('betaForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Collect pain points
-            const painPoints = Array.from(document.querySelectorAll('input[name="pain_points"]:checked'))
-                .map(cb => cb.value);
-            
-            // Validate max 2 selections
-            if (painPoints.length === 0) {
-                alert('Veuillez sélectionner au moins une inquiétude');
-                return;
-            }
-            if (painPoints.length > 2) {
-                alert('Veuillez sélectionner maximum 2 inquiétudes');
-                return;
-            }
-            
-            // Collect uploaded files
-            const fileInput = document.getElementById('documents');
-            const files = fileInput.files;
-            const fileNames = Array.from(files).map(f => f.name);
-            
-            // Collect form data
-            const formData = {
-                prenom: document.getElementById('prenom').value,
-                nom: document.getElementById('nom').value,
-                email: document.getElementById('email').value,
-                telephone: document.getElementById('telephone').value,
-                linkedin: document.getElementById('linkedin').value,
-                statut_achat: document.getElementById('statut_achat').value,
-                lien_annonce: document.getElementById('lien_annonce').value,
-                motivation: document.getElementById('motivation').value,
-                engagement_temoignage: document.getElementById('engagement_temoignage').checked,
-                engagement_avis: document.getElementById('engagement_avis').checked,
-                engagement_video: document.getElementById('engagement_video').checked,
-                pain_points: painPoints,
-                documents_uploaded: fileNames,
-                timestamp: new Date().toISOString()
-            };
-
-            // TODO: Replace with your actual backend endpoint (Netlify Function + Supabase)
-            // For file upload, you'll need to use FormData instead of JSON
-            console.log('Form data:', formData);
-            console.log('Files:', files);
-            
-            // Show success message
-            document.getElementById('betaForm').style.display = 'none';
-            document.getElementById('successMessage').classList.add('show');
-
-            // Scroll to success message
-            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-            /* 
-            // When ready to connect to backend with file upload:
-            const formDataToSend = new FormData();
-            
-            // Add text fields
-            Object.keys(formData).forEach(key => {
-                if (key !== 'documents_uploaded') {
-                    formDataToSend.append(key, typeof formData[key] === 'object' ? JSON.stringify(formData[key]) : formData[key]);
-                }
-            });
-            
-            // Add files
-            for (let i = 0; i < files.length; i++) {
-                formDataToSend.append('documents', files[i]);
-            }
-            
-            fetch('YOUR_NETLIFY_FUNCTION_URL', {
-                method: 'POST',
-                body: formDataToSend
-            })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('betaForm').style.display = 'none';
-                document.getElementById('successMessage').classList.add('show');
-                document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
-            })
-            .catch(error => {
-                alert('Une erreur est survenue. Veuillez réessayer.');
-                console.error('Error:', error);
-            });
-            */
-        });
-    </script>
+    <script src="form-handler.js"></script>
 </body>
 </html>

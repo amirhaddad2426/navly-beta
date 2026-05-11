@@ -1,0 +1,13 @@
+{
+  "name": "navly-beta",
+  "version": "1.0.0",
+  "description": "Navly beta candidate form backend",
+  "main": "index.js",
+  "dependencies": {
+    "@supabase/supabase-js": "2.39.0",
+    "resend": "3.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
